@@ -1,0 +1,14 @@
+.console{
+
+}
+.console-ul{
+    list-style: none;
+    background: #fff none;
+    font-size: 20px;
+    color: #000;
+    height: 45vh;
+    overflow-y: scroll;
+}
+.console-li{
+    margin-left: 16px;
+}

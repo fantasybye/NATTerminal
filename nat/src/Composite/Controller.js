@@ -1,6 +1,6 @@
 import React from 'react';
-import '../CSS/Controller.css';
-import { Button } from "antd";
+import '../CSS/Composite/Controller.css';
+import Button from "../Component/Button";
 import Component from '../Constants/Component';
 import PanelTitle from "../Component/PanelTitle";
 
@@ -42,11 +42,12 @@ class Controller extends Component{
         return(
             <div>
                 <PanelTitle name={this.state.titleName} />
-                <span className="controller-title">控制按钮</span>
-                {this.state.buttonList.map((item)=>(
-                <div className="controller-button-wrapper" key={item.id}>
-                    <Button shape="round" size="large" onClick={()=>{this.props.handleClick(item.id)}}>{item.name}</Button>
-                </div>))}
+                {/*<span className="controller-title">控制按钮</span>*/}
+                <div className="controller-button-list">
+                    {this.state.buttonList.map((item)=>(
+                        <Button key={item.id} value={item} handleClick={this.props.handleClick}/>
+                    ))}
+                </div>
             </div>
         )
     }

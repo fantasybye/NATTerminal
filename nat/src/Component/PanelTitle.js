@@ -1,5 +1,5 @@
 import React from 'react';
-import  '../CSS/PanelTitle.css';
+import  '../CSS/Component/PanelTitle.css';
 import Component from '../Constants/Component';
 
 class PanelTitle extends Component{

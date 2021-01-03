@@ -1,6 +1,5 @@
 import React from 'react';
-import '../CSS/Console.css';
-import { Timeline } from "antd";
+import '../CSS/Composite/Console.css';
 import Component from '../Constants/Component';
 import PanelTitle from "../Component/PanelTitle";
 
@@ -15,9 +14,9 @@ class Console extends Component{
         return(
             <div className='console'>
                 <PanelTitle name={this.state.titleName} />
-                <Timeline>
-                    {this.props.text.map((line)=>(<Timeline.Item>{line}</Timeline.Item>))}
-                </Timeline>
+                <ul className="console-ul">
+                    {this.props.text.map((line)=>(<li className="console-li">{line}</li>))}
+                </ul>
             </div>
         )
     }

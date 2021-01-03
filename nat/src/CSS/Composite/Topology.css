@@ -1,14 +1,14 @@
 .topology{
     /*width: 60vw;*/
-    min-height: 45vh;
+    min-height: 50vh;
 }
 .topology-img-wrapper{
     /*width: 60vw;*/
-    height: 40vh;
-    padding-left: calc(25vw - 30vh);
+    height: 45vh;
+    padding-left: calc(25vw - 35vh);
     background: #FFFFFF;
 }
 img{
     /*width: 60vw;*/
-    height: 40vh;
+    height: 45vh;
 }

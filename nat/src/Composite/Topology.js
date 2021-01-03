@@ -1,7 +1,7 @@
 import React from 'react';
 import PanelTitle from "../Component/PanelTitle";
 import topologyImg from "../Image/topology.png";
-import '../CSS/Topology.css';
+import '../CSS/Composite/Topology.css';
 import Component from '../Constants/Component';
 
 class Topology extends Component{
