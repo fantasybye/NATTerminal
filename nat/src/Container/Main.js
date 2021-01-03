@@ -55,7 +55,7 @@ class  Main extends Component{
                     <Terminal text={this.state.terminalText}/>
                 </div>
                 <div className="controller">
-                    <Controller handleClick={this.handleClickFake}/>
+                    <Controller handleClick={this.handleClick}/>
                 </div>
             </div>
         )
