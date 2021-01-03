@@ -9,7 +9,7 @@ class Terminal extends Component{
         return(
             <div className='terminal'>
                 <Topology />
-                <Console />
+                <Console text={this.props.text}/>
             </div>
         )
     }

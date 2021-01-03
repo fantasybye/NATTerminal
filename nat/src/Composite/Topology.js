@@ -1,5 +1,5 @@
 import React from 'react';
-import PanelTitle from "./PanelTitle";
+import PanelTitle from "../Component/PanelTitle";
 import topologyImg from "../Image/topology.png";
 import '../CSS/Topology.css';
 import Component from '../Constants/Component';

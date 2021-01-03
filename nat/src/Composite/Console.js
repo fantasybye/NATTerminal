@@ -1,7 +1,8 @@
 import React from 'react';
 import '../CSS/Console.css';
+import { Timeline } from "antd";
 import Component from '../Constants/Component';
-import PanelTitle from "./PanelTitle";
+import PanelTitle from "../Component/PanelTitle";
 
 class Console extends Component{
     constructor(props, context) {
@@ -14,7 +15,9 @@ class Console extends Component{
         return(
             <div className='console'>
                 <PanelTitle name={this.state.titleName} />
-                <div>This is console</div>
+                <Timeline>
+                    {this.props.text.map((line)=>(<Timeline.Item>{line}</Timeline.Item>))}
+                </Timeline>
             </div>
         )
     }

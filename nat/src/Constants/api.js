@@ -1,8 +1,28 @@
 
 import { define } from './api_helper';
-// const url1 = 'http://192.168.0.88:7012';
+const url = 'http://127.0.0.1:8080';
 
 const apiObject = {
-
+    test:{
+        url:`${url}/test`,
+    },
+    configRouter:{
+        url:`${url}/router_config`,
+    },
+    staticNat:{
+        url:`${url}/static_nat`,
+    },
+    deleteStaticNat:{
+        url:`${url}/delete_static_nat`
+    },
+    dynamicNat:{
+        url:`${url}/dynamic_nat`
+    },
+    showNat:{
+        url:`${url}/show_nat`
+    },
+    showConfig:{
+        url:`${url}/show_config`
+    }
 };
 export default define(apiObject);
