@@ -1,5 +1,8 @@
+.controller-button-wrapper{
+
+}
 .controller-button{
-    /*line-height: 60px;*/
+    line-height: 60px;
     position: relative;
     display: inline-block;
     font-weight: 400;
@@ -17,11 +20,17 @@
     -ms-touch-action: manipulation;
     touch-action: manipulation;
     height: 60px;
-    padding: 4px 15px;
+    padding:0 15px;
     font-size: 28px;
-    border-radius: 2px;
+    border-radius: 10px;
     color: rgba(0,0,0,.85);
     background: #fff none;
     border: 1px solid #d9d9d9;
-    margin: 20px 0;
+    margin: 25px 0;
+}
+.controller-button:hover{
+    background: #1890ff none;
+    color: #fff;
+    -webkit-box-shadow: 2px 2px 5px 5px rgba(0,0,0,.085) inset;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,.085) inset;
 }
