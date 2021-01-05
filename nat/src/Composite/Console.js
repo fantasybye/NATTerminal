@@ -15,7 +15,7 @@ class Console extends Component{
             <div className='console'>
                 <PanelTitle name={this.state.titleName} />
                 <ul className="console-ul">
-                    {this.props.text.map((line)=>(<li className="console-li">{line}</li>))}
+                    {this.props.text.map((line)=>(<li key={line} className="console-li">{line}</li>))}
                 </ul>
             </div>
         )
