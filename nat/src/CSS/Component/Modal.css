@@ -1,0 +1,109 @@
+.modal-mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    background-color: rgba(0,0,0,.45);
+    pointer-events: none;
+}
+.modal{
+    position: fixed;
+    background: #ffffff;
+    width: 30vw;
+    /*height: 20vh;*/
+    top: 100px;
+    left: 35vw;
+    z-index: 1000;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
+    /*pointer-events: none;*/
+    max-width: calc(100vw - 32px);
+    margin: 0 auto;
+    padding: 0 0 10px;
+}
+.modal-title{
+    font-size: 20px;
+    line-height: 4vh;
+    font-weight: 600;
+    padding-left: 25px;
+    height: 4vh;
+    border-bottom: #d9d9d9 1px solid;
+}
+.modal-text{
+    padding: 20px 40px;
+    font-size: 16px;
+}
+/*.modal-text-wrap{*/
+/*    height: 12vh;*/
+/*}*/
+/*.modal-content{*/
+/*    !*height: 16vh;*!*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+.modal-bottom{
+    margin-top: 20px;
+    border-top: #d9d9d9 1px solid;
+    width: 30vw;
+    height: 4vh;
+    float: right;
+}
+
+.modal-text-wrap .ant-form-item-label{
+    display: inline;
+    width: 30px;
+    margin:20px 0 0 20px;
+}
+.modal-text-wrap .ant-col{
+    display: inline-block;
+}
+.modal-input{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 20px;
+    /*padding: 0;*/
+    font-variant: tabular-nums;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /*min-width: 0;*/
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.modal-button{
+    padding: 0;
+    border-radius: 4px;
+    background: #1890ff none;
+    color: #FFFFFF;
+    width: 5vw;
+    height: 3vh;
+    margin: 10px 0 0 24vw;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2vh;
+}
+.modal-button:hover{
+    background: #40a9ff none;
+}

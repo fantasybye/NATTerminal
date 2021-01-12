@@ -12,7 +12,7 @@ class Controller extends Component{
             buttonList:[
                 {
                     id:0,
-                    name:"配置路由器信息",
+                    name:'配置路由器',
                 },
                 {
                     id:1,

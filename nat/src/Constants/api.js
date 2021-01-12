@@ -8,21 +8,24 @@ const apiObject = {
     },
     configRouter:{
         url:`${url}/router_config`,
+        method:'post'
     },
     staticNat:{
         url:`${url}/static_nat`,
+        method:'post'
     },
     deleteStaticNat:{
         url:`${url}/delete_static_nat`
     },
     dynamicNat:{
-        url:`${url}/dynamic_nat`
+        url:`${url}/dynamic_nat`,
+        method:'post'
     },
     showNat:{
         url:`${url}/show_nat`
     },
     showConfig:{
-        url:`${url}/show_config`
+        url:`${url}/verify`
     }
 };
 export default define(apiObject);

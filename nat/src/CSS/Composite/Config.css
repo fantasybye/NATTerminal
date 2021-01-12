@@ -1,0 +1,79 @@
+.config{
+    height: 45vh;
+    font-size: 14px;
+}
+.config_form{
+    background: #FFFFFF;
+    color: black;
+    height: 45vh;
+}
+.columns{
+    display: flex;
+}
+.column{
+    margin: 10px;
+    /*margin-left: 10px;*/
+    width: 12vw
+}
+.submit-wrapper{
+    float: right;
+    height: 5vh;
+}
+.submit-button{
+    width: 90px;
+    margin: 15px 10px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    line-height: 30px;
+    background: #1890ff none;
+    color: #FFFFFF;
+}
+.submit-button:hover{
+    background: #40a9ff none;
+}
+.column-title{
+    font-size: 18px;
+    font-weight: 600 ;
+}
+.port{
+    font-size: 16px;
+    color: #3f3f3f;
+    height: 24px;
+}
+.ant-form-item-label{
+    position: relative;
+    /*display: -webkit-inline-box;*/
+    /*display: -ms-inline-flexbox;*/
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+}
+.ant-input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    /*padding: 0;*/
+    font-variant: tabular-nums;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
