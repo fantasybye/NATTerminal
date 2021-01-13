@@ -159,16 +159,28 @@ class  Main extends Component{
                     modalText:'监控NAT转换',
                     modalContent:"获取NAT转换中......"
                 })
-                this.$api.showNat.request().then(({ data })=>{
-                this.handleMessage(data.message)
-            });break;
+            //     this.$api.showNat.request().then(({ data })=>{
+            //     this.handleMessage(data.message)
+            //         this.setState({
+            //             modalContent:'删除完毕'
+            //         })
+            // });
+                setTimeout(()=>{
+                    this.setState({
+                        modalContent:`${this.state.staticNat[0].from}转换成${this.state.staticNat[0].to};${this.state.staticNat[1].from}转换成${this.state.staticNat[1].to}`
+                    })
+                }, 5)
+                break;
             case 5:
                 this.setState({
                     modalText:'核验NAT配置',
-                    modalContent:"核验NAT配置中......"
+                    modalContent:"尝试通过ping检查端口连通性中......"
                 })
                 this.$api.showConfig.request().then(({ data })=>{
                 this.handleMessage(data.message)
+                    this.setState({
+                        modalContent:data.message
+                    })
             });break;
             default:break;
         }
