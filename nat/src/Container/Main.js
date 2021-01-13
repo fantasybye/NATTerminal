@@ -169,7 +169,7 @@ class  Main extends Component{
                     this.setState({
                         modalContent:`${this.state.staticNat[0].from}转换成${this.state.staticNat[0].to};${this.state.staticNat[1].from}转换成${this.state.staticNat[1].to}`
                     })
-                }, 5)
+                }, 5000)
                 break;
             case 5:
                 this.setState({
