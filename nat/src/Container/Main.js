@@ -86,7 +86,8 @@ class  Main extends Component{
             this.handleMessage(data.message)
             this.setState({
                 staticNat,
-                modalShow:false
+                modalShow:false,
+                modalButton:"OK"
             })
             alert("静态NAT配置成功！")
         })
@@ -106,14 +107,16 @@ class  Main extends Component{
             this.handleMessage(data.message)
             this.setState({
                 dynamicNat,
-                modalShow:false
+                modalShow:false,
+                modalButton:"OK"
             })
             alert("动态NAT配置成功！")
         })
     }
     closeModal = () =>{
         this.setState({
-            modalShow: false
+            modalShow: false,
+            modalButton:"OK"
         })
     }
     handleClick = (id) => {
